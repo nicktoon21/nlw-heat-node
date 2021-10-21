@@ -25,8 +25,7 @@ class CreateMessageService {
             }
         }
 
-        console.log(`teste ${infoWS.user.name}`)
-        io.emit("new message", infoWS);
+        io.emit("new_message", infoWS);
 
         return message;
     }
